@@ -1,5 +1,10 @@
 <template>
   <div>
-    <h1 class="text-3xl font-bold underline">Halo</h1>
+    <h1 class="text-black font-bold test-5xl">halo</h1>
   </div>
 </template>
+
+<script setup>
+
+</script>
+
