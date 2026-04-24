@@ -1,10 +1,15 @@
-<template>
-  <div>
-    <h1 class="text-black font-bold test-5xl">halo</h1>
-  </div>
-</template>
+<script lang="ts" setup>
+import { ref } from "vue";
 
-<script setup>
+import FluidCursor from "./components/FluidCursor.vue"; 
+
 
 </script>
 
+<template>
+  <div class="relative flex h-60 w-full flex-col items-center justify-center gap-4">
+
+    
+    <FluidCursor />
+  </div>
+</template>

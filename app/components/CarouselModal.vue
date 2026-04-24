@@ -1,10 +1,8 @@
 <template>
-  <!-- 🌌 WRAPPER -->
   <div
     v-if="open"
     class="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
   >
-    <!-- 🎡 CAROUSEL -->
     <Carousel3D
       :items="items"
       :width="450"
@@ -13,7 +11,6 @@
     />
   </div>
 
-  <!-- 🪟 MODAL -->
   <Transition name="modal">
     <div
       v-if="selectedItem"
@@ -47,7 +44,7 @@
 import { ref } from "vue";
 import Carousel3D from "./Carousel3D.vue";
 
-// props biar reusable
+// props reusable
 const props = defineProps({
   open: Boolean,
   items: {
