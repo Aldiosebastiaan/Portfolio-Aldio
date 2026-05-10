@@ -2,14 +2,18 @@
 import { ref } from "vue";
 
 import FluidCursor from "./components/FluidCursor.vue"; 
-
+import Navbar from "./components/Navbar.vue";
 
 </script>
 
 <template>
-  <div class="relative flex h-60 w-full flex-col items-center justify-center gap-4">
-
+  <div class="relative min-h-screen w-full bg-gray-50 flex flex-col items-center pt-8">
+    <Navbar />
     
+    <main class="w-full flex-1">
+      <NuxtPage />
+    </main>
+
     <FluidCursor />
   </div>
 </template>
