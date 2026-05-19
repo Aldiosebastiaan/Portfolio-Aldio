@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 
-import FluidCursor from "./components/FluidCursor.vue"; 
-import Navbar from "./components/Navbar.vue";
+import FluidCursor from "./components/effects/FluidCursor.vue"; 
+import Navbar from "./components/layout/Navbar.vue";
 
 </script>
 
