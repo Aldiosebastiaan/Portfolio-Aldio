@@ -3,13 +3,16 @@ import { ref } from "vue";
 
 import FluidCursor from "./components/effects/FluidCursor.vue"; 
 import Navbar from "./components/layout/Navbar.vue";
+import HeroSection from "./components/sections/HeroSection.vue";
+import AboutSection from "./components/sections/AboutSection.vue";
 
 </script>
 
 <template>
   <div class="relative min-h-screen w-full bg-gray-50 flex flex-col items-center pt-8">
     <Navbar />
-    
+    <HeroSection />
+    <AboutSection />
     <main class="w-full flex-1">
       <NuxtPage />
     </main>
