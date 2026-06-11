@@ -47,8 +47,10 @@
 
                 <!-- Buttons -->
                 <div class="flex flex-wrap items-center gap-4 pt-6">
-                    <a href="#"
-                        class="bg-[#5B7BF8] hover:bg-[#4364e8] text-white rounded-[2rem] px-8 py-3.5 font-semibold text-sm flex items-center gap-2 shadow-xl shadow-blue-500/20 transition-all">
+                    <a href="#" class="inline-flex items-center gap-2 px-8 py-3 rounded-[2rem]
+    bg-[#254DF5] text-white border-2 border-black
+    hover:bg-white hover:text-black hover:border-[#254DF5]
+    font-semibold text-sm shadow-md transition-all duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -58,8 +60,10 @@
                         Download CV
                     </a>
 
-                    <a href="#"
-                        class="border-2 border-[#5B7BF8] text-[#1A1A1A] hover:bg-blue-50 rounded-[2rem] px-8 py-3.5 font-semibold text-sm flex items-center gap-2 transition-all bg-white">
+                    <a href="#" class="inline-flex items-center justify-center gap-2 px-8 py-3
+    rounded-[2rem] bg-white text-black border-2 border-[#254DF5]
+    hover:bg-[#254DF5] hover:text-white hover:border-black
+    font-bold text-sm shadow-sm hover:shadow-md transition-all duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
