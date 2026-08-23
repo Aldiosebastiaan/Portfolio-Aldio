@@ -12,7 +12,7 @@ const navLinks = [
 
 <template>
   <nav
-    class="flex items-center justify-between px-6 py-3 rounded-md bg-gradient-to-r from-[#98aaff] via-[#c4d2ff] to-[#f3f6ff] shadow-md shadow-gray-300/50 w-full max-w-4xl mx-auto"
+    class="sticky top-6 z-50 flex items-center justify-between px-6 py-3 rounded-md bg-gradient-to-r from-[#98aaff] via-[#c4d2ff] to-[#f3f6ff] shadow-md shadow-gray-300/50 w-full max-w-4xl mx-auto"
   >
     <!-- Logo -->
     <a href="#" class="text-gray-900 font-bold text-xl tracking-tight">

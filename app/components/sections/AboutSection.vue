@@ -5,7 +5,7 @@
       <!-- Left Content (Image & Floating Icons) -->
       <div class="relative w-full max-w-md mx-auto flex justify-center items-center">
         <!-- Main Image -->
-        <img src="~/assets/images/about.png" alt="About Me"
+        <img src="/images/about.png" alt="About Me"
           class="relative w-full max-w-[440px] h-auto object-contain drop-shadow-2xl" />
 
         <!-- Floating Icons -->
