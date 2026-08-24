@@ -141,8 +141,7 @@ const getCardStyle = (index: number) => {
           class="absolute left-0 top-0 pointer-events-auto" :style="getCardStyle(i)">
           <!-- Glassmorphism Card Element -->
           <div class="card-glass w-[80px] h-[100px] sm:w-[100px] sm:h-[120px] lg:w-[110px] lg:h-[140px] 
-                   bg-white/10 backdrop-blur-xl border border-white/20 
-                   shadow-[0_12px_40px_rgba(0,0,0,0.15)] rounded-2xl 
+                   bg-neutral-300/70 backdrop-blur-2xl border border-white/15 shadow-lg rounded-[20px]
                    flex items-center justify-center transition-transform duration-300 hover:scale-110 cursor-pointer">
             <slot :name="`item-${i + 1}`" :item="item" :index="i" :isOpen="isOpen">
               <slot name="item" :item="item" :index="i" :isOpen="isOpen">
