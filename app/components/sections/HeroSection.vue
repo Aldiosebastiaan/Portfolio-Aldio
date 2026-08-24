@@ -1,7 +1,8 @@
 <template>
-    <section class="w-full min-h-[80vh] flex items-center justify-center py-6 md:py-8 px-6 font-sans">
-        <div class="max-w-6xl w-full mx-auto pl-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="flex flex-col space-y-6 z-10">
+    <section class="w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center py-4 md:py-8 px-6 font-sans">
+        <div
+            class="max-w-[1600px] mr-12 w-full mx-auto xl:px-4 grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 items-center">
+            <div class="flex flex-col space-y-8 z-10">
                 <!-- Social Icons -->
                 <div class="mb-2 w-max">
                     <UiDock class="m-0 p-0 border-none bg-transparent backdrop-blur-none shadow-none h-auto gap-4">
@@ -29,15 +30,15 @@
                     </UiDock>
                 </div>
 
-                <div class="space-y-1">
-                    <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 tracking-tight">Hi, there!</h2>
+                <div class="space-y-2">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">Hi, there!</h2>
                     <h1
-                        class="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold text-gray-900 leading-[1.1] tracking-tight">
+                        class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-[1.1] tracking-tight">
                         I'm <span class="text-[#254DF5]">Aldio Sebastiansyah</span>
                     </h1>
                 </div>
 
-                <p class="text-gray-500 max-w-[34rem] leading-relaxed text-[15px] md:text-base mt-4 text-justify">
+                <p class="text-gray-500 max-w-[50rem] leading-relaxed text-lg md:text-xl mt-6 text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -83,7 +84,7 @@
             </div>
 
             <!-- Right Image -->
-            <div class="relative w-full max-w-md mx-auto lg:ml-auto mt-12 lg:mt-0 flex justify-center">
+            <div class="relative w-full max-w-xl mx-auto lg:ml-auto mt-12 lg:mt-0 flex justify-center">
                 <!-- Blobs behind image -->
                 <div class="absolute inset-0 -z-10 scale-[1.35] translate-x-8 -translate-y-4">
                     <!-- Stroke Blob -->
@@ -103,7 +104,7 @@
                 </div>
 
                 <img src="~/assets/images/hero.png" alt="Aldio Sebastiansyah"
-                    class="relative z-10 w-full max-w-[440px] h-auto object-contain object-bottom drop-shadow-2xl" />
+                    class="relative z-10 w-full max-w-[1000px] h-auto object-contain object-bottom drop-shadow-2xl ml-12" />
             </div>
 
         </div>
