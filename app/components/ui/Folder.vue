@@ -73,9 +73,6 @@ onUnmounted(() => {
   if (observer) observer.disconnect()
 })
 
-// Konfigurasi posisi untuk 14 items
-// Nilai ini dirancang untuk layar desktop (scale 1x)
-// Diatur agar menyebar estetik secara radial / fan-like
 const cardPositions = [
   { x: -380, y: -220, r: -22 }, // 1 outer left
   { x: 380, y: -220, r: 22 },   // 2 outer right
@@ -106,14 +103,13 @@ const getCardStyle = (index: number) => {
   }
 
   const pos = cardPositions[index % cardPositions.length]
-  const delay = index * 45 // Stagger effect
+  const delay = index * 45
 
   return {
     transform: `translate(calc(-50% + var(--spread-x, 1) * ${pos.x}px), calc(-50% + var(--spread-y, 1) * ${pos.y}px)) scale(1) rotate(${pos.r}deg)`,
     opacity: 1,
     transition: `all 800ms cubic-bezier(0.34, 1.56, 0.64, 1)`,
     transitionDelay: `${delay}ms`,
-    // Z-index agar card yang keluar lebih awal berada di bawah/atas secara logis
     zIndex: 14 - index,
   }
 }
@@ -135,7 +131,7 @@ const getCardStyle = (index: number) => {
       <div class="absolute top-0 left-0 w-[45%] h-[20%] rounded-tl-2xl rounded-tr-3xl transition-colors"
         style="background-color: var(--folder-back); clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%)"></div>
 
-      <!-- CARDS (Berada di antara Back dan Front folder) -->
+      <!-- CARDS  -->
       <div class="absolute left-1/2 bottom-[20%] w-0 h-0 z-10 pointer-events-none">
         <div v-for="(item, i) in props.items.slice(0, 14)" :key="item.id || i"
           class="absolute left-0 top-0 pointer-events-auto" :style="getCardStyle(i)">
@@ -145,7 +141,6 @@ const getCardStyle = (index: number) => {
                    flex items-center justify-center transition-transform duration-300 hover:scale-110 cursor-pointer">
             <slot :name="`item-${i + 1}`" :item="item" :index="i" :isOpen="isOpen">
               <slot name="item" :item="item" :index="i" :isOpen="isOpen">
-                <!-- Fallback Icon / Logo if no slot provided -->
                 <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center border border-white/30">
                   <span class="text-white/60 font-mono text-xs font-bold">{{ i + 1 }}</span>
                 </div>

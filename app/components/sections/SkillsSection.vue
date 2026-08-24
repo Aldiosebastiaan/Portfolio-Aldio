@@ -36,8 +36,8 @@ const skills = [
 </script>
 
 <template>
-    <section class="w-full relative py-12 md:py-16 bg-gray-50 flex flex-col items-center overflow-x-hidden">
-        <div class="mb-12 text-center z-30">
+    <section class="w-full relative py-1 md:py-2 bg-gray-50 flex flex-col items-center overflow-x-hidden">
+        <div class="mt-12 mb-12 text-center z-30">
             <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight"> <span
                     class="text-[#254DF5]">Tech</span> Stack</h2>
             <p class="text-gray-500 max-w-2xl mx-auto mt-4 mb-16 md:text-lg">
