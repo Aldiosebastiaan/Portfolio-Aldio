@@ -5,29 +5,29 @@
             <div class="flex flex-col space-y-8 z-10">
                 <!-- Social Icons -->
                 <div class="mb-2 w-max">
-                    <UiDock class="m-0 p-0 border-none bg-transparent backdrop-blur-none shadow-none h-auto gap-4">
-                        <UiDockIcon>
+                    <Dock class="m-0 p-0 border-none bg-transparent backdrop-blur-none shadow-none h-auto gap-4">
+                        <DockIcon>
                             <a href="#"><img src="~/assets/icons/instagram.png" alt="Instagram"
                                     class="w-full h-full object-contain" /></a>
-                        </UiDockIcon>
-                        <UiDockIcon>
+                        </DockIcon>
+                        <DockIcon>
                             <a href="#"><img src="~/assets/icons/gmail.png" alt="Gmail"
                                     class="w-full h-full object-contain" /></a>
-                        </UiDockIcon>
-                        <UiDockIcon>
+                        </DockIcon>
+                        <DockIcon>
                             <a href="https://github.com/Aldiosebastiaan" target="_blank"><img
                                     src="~/assets/icons/github.png" alt="GitHub"
                                     class="w-full h-full object-contain" /></a>
-                        </UiDockIcon>
-                        <UiDockIcon>
+                        </DockIcon>
+                        <DockIcon>
                             <a href="#"><img src="~/assets/icons/linkedin.png" alt="LinkedIn"
                                     class="w-full h-full object-contain" /></a>
-                        </UiDockIcon>
-                        <UiDockIcon>
+                        </DockIcon>
+                        <DockIcon>
                             <a href="#"><img src="~/assets/icons/logos_facebook.png" alt="Facebook"
                                     class="w-full h-full object-contain" /></a>
-                        </UiDockIcon>
-                    </UiDock>
+                        </DockIcon>
+                    </Dock>
                 </div>
 
                 <div class="space-y-2">

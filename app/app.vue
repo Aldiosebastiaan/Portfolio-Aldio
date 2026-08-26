@@ -4,6 +4,7 @@
     <HeroSection />
     <AboutSection />
     <SkillsSection />
+    <ProjectSection />
     <main class="w-full flex-1">
       <NuxtLayout>
         <NuxtPage />
