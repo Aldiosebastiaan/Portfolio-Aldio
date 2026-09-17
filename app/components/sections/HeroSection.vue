@@ -1,7 +1,8 @@
 <template>
     <section id="home"
         class="w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center py-6 sm:py-8 md:py-12 px-4 sm:px-6 font-sans scroll-mt-24 bg-white">
-        <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 xl:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div
+            class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 xl:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
             <!-- Left Info (Smooth Fade & Slide in) -->
             <div
@@ -11,11 +12,14 @@
                     <Dock
                         class="m-0 p-0 border-none bg-transparent backdrop-blur-none shadow-none h-auto gap-3 sm:gap-4">
                         <DockIcon>
-                            <a href="#"><img src="~/assets/icons/instagram.png" alt="Instagram"
+                            <a href="https://www.instagram.com/aldiosebastiaan/" target="_blank"><img
+                                    src="~/assets/icons/instagram.png" alt="Instagram"
                                     class="w-full h-full object-contain" /></a>
                         </DockIcon>
                         <DockIcon>
-                            <a href="#"><img src="~/assets/icons/gmail.png" alt="Gmail"
+                            <a
+                                href="mailto:aldiosebastian9@gmail.com?subject=Hello%20Aldio&body=Halo%20Aldio,%20saya%20ingin%20menghubungi%20kamu."><img
+                                    src="~/assets/icons/gmail.png" alt="Gmail"
                                     class="w-full h-full object-contain" /></a>
                         </DockIcon>
                         <DockIcon>
@@ -24,11 +28,13 @@
                                     class="w-full h-full object-contain" /></a>
                         </DockIcon>
                         <DockIcon>
-                            <a href="#"><img src="~/assets/icons/linkedin.png" alt="LinkedIn"
+                            <a href="https://www.linkedin.com/in/aldio-sebastiansyah-a7a9a7428/"><img
+                                    src="~/assets/icons/linkedin.png" alt="LinkedIn"
                                     class="w-full h-full object-contain" /></a>
                         </DockIcon>
                         <DockIcon>
-                            <a href="#"><img src="~/assets/icons/logos_facebook.png" alt="Facebook"
+                            <a href="https://www.facebook.com/share/1De583sPdv/?mibextid=wwXIfr"><img
+                                    src="~/assets/icons/logos_facebook.png" alt="Facebook"
                                     class="w-full h-full object-contain" /></a>
                         </DockIcon>
                     </Dock>
@@ -54,10 +60,8 @@
 
                 <!-- Buttons -->
                 <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-4 sm:pt-6">
-                    <a href="#" class="inline-flex items-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 rounded-[2rem]
-    bg-[#254DF5] text-white border-2 border-black
-    hover:bg-white hover:text-black hover:border-[#254DF5]
-    font-semibold text-xs sm:text-sm shadow-md transition-all duration-300">
+                    <a href="/cv/CV_Aldio_Sebastiansyah.pdf" download="CV_Aldio_Sebastiansyah.pdf" target="_blank"
+                        class="inline-flex items-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 rounded-[2rem] bg-[#254DF5] text-white border-2 border-black hover:bg-white hover:text-black hover:border-[#254DF5] font-semibold text-xs sm:text-sm shadow-md transition-all duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -66,6 +70,7 @@
                         </svg>
                         Download CV
                     </a>
+
 
                     <a href="#contact" @click="scrollToContact" class="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3
     rounded-[2rem] bg-white text-black border-2 border-[#254DF5]
