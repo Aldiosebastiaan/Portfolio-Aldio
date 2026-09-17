@@ -1,11 +1,11 @@
 <template>
     <section id="home"
         class="w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center py-6 sm:py-8 md:py-12 px-4 sm:px-6 font-sans scroll-mt-24 bg-white">
-        <div class="max-w-[1600px] w-full mx-auto xl:px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-center">
+        <div class="max-w-[1600px] w-full mx-auto px-4 sm:px-8 xl:px-12 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
             <!-- Left Info (Smooth Fade & Slide in) -->
             <div
-                class="flex flex-col space-y-6 sm:space-y-8 z-10 reveal-left reveal-delay-100 items-center lg:items-start text-center lg:text-left">
+                class="flex flex-col space-y-6 sm:space-y-8 z-10 reveal-left reveal-delay-100 items-center lg:items-start text-center lg:text-left lg:pl-6 xl:pl-10">
                 <!-- Social Icons -->
                 <div class="mb-2 w-max mx-auto lg:mx-0">
                     <Dock
