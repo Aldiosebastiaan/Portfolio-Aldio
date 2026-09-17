@@ -1,5 +1,6 @@
 <template>
-  <section id="projects" class="w-full relative py-14 sm:py-20 md:py-32 bg-white overflow-hidden font-sans scroll-mt-24">
+  <section id="projects"
+    class="w-full relative py-14 sm:py-20 md:py-32 bg-white overflow-hidden font-sans scroll-mt-24">
     <!-- Section Title -->
     <div class="mb-12 sm:mb-16 md:mb-24 text-center z-30 relative px-4 sm:px-6 reveal-init">
       <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
@@ -17,29 +18,34 @@
         <div v-for="(project, i) in projects" :key="i"
           class="w-full flex flex-col items-center justify-between gap-8 sm:gap-12 lg:gap-16 xl:gap-24"
           :class="i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'">
-          
+
           <!-- Project Card -->
-          <div class="w-full lg:w-[58%] xl:w-[60%]" :class="i % 2 === 0 ? 'reveal-left reveal-delay-100' : 'reveal-right reveal-delay-100'">
+          <div class="w-full lg:w-[58%] xl:w-[60%]"
+            :class="i % 2 === 0 ? 'reveal-left reveal-delay-100' : 'reveal-right reveal-delay-100'">
             <div
-              class="group relative bg-gray-50 rounded-[28px] sm:rounded-[36px] p-2.5 sm:p-4 border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.06)] hover:shadow-[0_30px_70px_rgba(37,77,245,0.15)] transition-all duration-500 overflow-hidden">
+              class="group relative bg-gray-50 rounded-xl sm:rounded-2xl p-2 sm:p-3 border border-gray-100 shadow-[0_15px_35px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgba(37,77,245,0.12)] transition-all duration-500 overflow-hidden">
               <!-- Card Inner Window Frame / Mockup Look -->
               <div
-                class="relative w-full aspect-[16/10] rounded-[22px] sm:rounded-[28px] overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+                class="relative w-full rounded-lg sm:rounded-xl overflow-hidden bg-gray-100 flex items-center justify-center">
                 <!-- If image exists -->
                 <img v-if="project.image" :src="project.image" :alt="project.title"
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" />
+                  class="w-full h-auto object-contain block group-hover:scale-[1.02] transition-transform duration-500 ease-out" />
 
                 <!-- Fallback / Preview Placeholder -->
                 <div v-else
-                  class="w-full h-full flex flex-col items-center justify-center p-6 sm:p-8 text-center bg-gradient-to-br from-[#EEF2FF] via-[#E0E7FF] to-[#F1F5F9] relative overflow-hidden">
+                  class="w-full aspect-[16/10] flex flex-col items-center justify-center p-6 sm:p-8 text-center bg-gradient-to-br from-[#EEF2FF] via-[#E0E7FF] to-[#F1F5F9] relative overflow-hidden">
                   <!-- Decorative blur circles -->
-                  <div class="absolute -top-12 -right-12 w-36 sm:w-48 h-36 sm:h-48 bg-[#254DF5]/15 rounded-full blur-2xl"></div>
-                  <div class="absolute -bottom-12 -left-12 w-36 sm:w-48 h-36 sm:h-48 bg-[#6366F1]/15 rounded-full blur-2xl"></div>
+                  <div
+                    class="absolute -top-12 -right-12 w-36 sm:w-48 h-36 sm:h-48 bg-[#254DF5]/15 rounded-full blur-2xl">
+                  </div>
+                  <div
+                    class="absolute -bottom-12 -left-12 w-36 sm:w-48 h-36 sm:h-48 bg-[#6366F1]/15 rounded-full blur-2xl">
+                  </div>
 
                   <!-- Mockup Content Box -->
                   <div class="relative z-10 flex flex-col items-center gap-3 sm:gap-4 max-w-sm">
                     <div
-                      class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-white shadow-md flex items-center justify-center text-[#254DF5] group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+                      class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-white shadow-md flex items-center justify-center text-[#254DF5] group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                       <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -56,7 +62,8 @@
           </div>
 
           <!-- Project Information (Beside Card) -->
-          <div class="w-full lg:w-[42%] xl:w-[40%] flex flex-col justify-center space-y-4 sm:space-y-6" :class="i % 2 === 0 ? 'reveal-right reveal-delay-200' : 'reveal-left reveal-delay-200'">
+          <div class="w-full lg:w-[42%] xl:w-[40%] flex flex-col justify-center space-y-4 sm:space-y-6"
+            :class="i % 2 === 0 ? 'reveal-right reveal-delay-200' : 'reveal-left reveal-delay-200'">
             <!-- Title -->
             <h3 class="text-xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight leading-tight">
               {{ project.title }}
@@ -120,18 +127,18 @@ const projects: Project[] = [
     description:
       'Platform e-commerce untuk furniture modern dengan fitur katalog produk interaktif, keranjang belanja real-time, integrasi gateway pembayaran.',
     tags: ['Nuxt.js', 'Vue.js', 'TailwindCSS', 'TypeScript'],
-    image: '',
-    github: 'https://github.com/Aldiosebastiaan',
-    link: '#'
+    image: '/images/ka-furniture.png',
+    github: 'https://github.com/Aldiosebastiaan/KA-Furniture-NuxtJS',
+    link: 'https://ka-furniture.vercel.app'
   },
   {
     title: 'Newt Shoes And Clean',
     description:
       'Dashboard manajemen analitik berbasis web untuk memantau metrik performa bisnis, visualisasi grafik interaktif, dan pelaporan data secara realtime.',
     tags: ['React', 'Next.js', 'TailwindCSS', 'Chart.js', 'PostgreSQL'],
-    image: '',
-    github: 'https://github.com/Aldiosebastiaan',
-    link: '#'
+    image: '/images/newt-shoes&clean.png',
+    github: 'https://github.com/Aldiosebastiaan/Newt_ShoesAndClean',
+    link: 'https://newt-shoes-and-clean-wmrn.vercel.app'
   }
 ]
 </script>
