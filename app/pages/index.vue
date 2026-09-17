@@ -1,7 +1,3 @@
 <template>
-  <div>
-    <SectionsHeroSection />
-    <SectionsAboutSection />
-    <SectionsSkillsSection />
-  </div>
+  <div />
 </template>

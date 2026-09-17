@@ -172,8 +172,15 @@ const getCardStyle = (index: number) => {
 
 /* CSS Variables untuk responsive spread cards */
 .folder-wrapper {
-  --spread-x: 0.5;
-  --spread-y: 0.6;
+  --spread-x: 0.38;
+  --spread-y: 0.52;
+}
+
+@media (min-width: 480px) {
+  .folder-wrapper {
+    --spread-x: 0.55;
+    --spread-y: 0.65;
+  }
 }
 
 /* Tablet */
