@@ -175,12 +175,6 @@ onUnmounted(() => {
           ]">
           <span>{{ link.name }}</span>
         </a>
-
-        <!-- Hire Me Mobile Button -->
-        <a href="#contact" @click="scrollToSection($event, '#contact', 'contact')"
-          class="mt-2 w-full text-center bg-[#2563eb] hover:bg-blue-700 text-white py-2.5 rounded-2xl text-sm font-semibold transition-colors shadow-sm">
-          Hire Me
-        </a>
       </div>
     </transition>
   </header>
