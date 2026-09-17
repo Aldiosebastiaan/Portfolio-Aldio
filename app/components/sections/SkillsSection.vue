@@ -36,16 +36,16 @@ const skills = [
 </script>
 
 <template>
-    <section class="w-full relative py-1 md:py-2 bg-gray-50 flex flex-col items-center overflow-x-hidden">
-        <div class="mt-12 mb-12 text-center z-30">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight"> <span
+    <section id="skills" class="w-full relative py-6 md:py-12 bg-white flex flex-col items-center overflow-x-hidden scroll-mt-24 px-4 sm:px-6">
+        <div class="mt-6 sm:mt-12 mb-6 sm:mb-12 text-center z-30 reveal-init">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight"> <span
                     class="text-[#254DF5]">Tech</span> Stack</h2>
-            <p class="text-gray-500 max-w-2xl mx-auto mt-4 mb-16 md:text-lg">
+            <p class="text-gray-500 max-w-2xl mx-auto mt-3 sm:mt-4 mb-8 sm:mb-16 text-sm sm:text-base md:text-lg">
                 Kumpulan teknologi, framework, dan tools yang saya gunakan.
             </p>
         </div>
 
-        <Folder :items="skills" color="#1B41FC" class="mt-24 mb-8 lg:mt-64">
+        <Folder :items="skills" color="#1B41FC" class="mt-16 sm:mt-24 mb-8 lg:mt-64 reveal-scale reveal-delay-200">
             <template #item="{ item: currentItem, isOpen }">
                 <div class="flex flex-col items-center justify-center gap-2 w-full h-full p-2 text-center">
                     <!-- Render the icon -->
