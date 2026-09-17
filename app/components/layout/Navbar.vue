@@ -137,12 +137,6 @@ onUnmounted(() => {
           <span>{{ isFluidCursorEnabled ? 'ON' : 'OFF' }}</span>
         </button>
 
-        <!-- Hire Me Button (Desktop & Tablet) -->
-        <a href="#contact" @click="scrollToSection($event, '#contact', 'contact')"
-          class="hidden sm:inline-flex bg-[#2563eb] hover:bg-blue-700 text-white px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold transition-all shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer items-center justify-center">
-          Hire Me
-        </a>
-
         <!-- Mobile Hamburger Button -->
         <button type="button" @click="toggleMobileMenu"
           class="md:hidden p-1.5 rounded-full text-gray-800 hover:bg-white/50 transition-colors cursor-pointer"
